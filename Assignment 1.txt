@@ -1,0 +1,17 @@
+1. The data model is the collection of concepts that can be used to describe the structure of the database (data types, relationships, constraints, etc.). This is equivalent to the schema that a DBMS uses to describe the data in each database.
+
+2. One DBS Utility that is extremely useful is the backup utility. This is needed so that the process of backing up a database is completely automated and can be done at regular intervals without anyone having to remember to do it themselves. It allows a complete restoration of a database to the most recent backup as well.
+
+3a. The internal schema describes the physical storage of the database. This includes the complete details of data storage and the access paths for the database.
+
+3b. If there were only the external level and the internal level, the database would not have the advantages of abstraction. This would mean that the data that a user wanted would be directly accessed and many operations and data types/constraints wouldn't be available to the user. It would also be a very unsafe system since the user could possibly access how the internal data was stored and could use that knowledge for nefarious usage.
+
+4a. The superkey of Fname, Lname, SSN in the employee table is not minimal. A minimal superkey would be SSN alone.
+
+4b. In the project table, pname could be a primary key.
+
+4c. Yes, in the dept_locations table, dnumber is a foreign key that refers to dnumber in the department table. This makes it both a foreign key and a primary key.
+
+5. It would not allow duplication. Although most SQL doesn't allow duplication due to primary key usage, there are intermediate tables that violate this. It would also cause problems when trying to order the results since items in a set are unordered.
+
+6. The Cartesian product returns all possible combinations of the two tables (i.e. A1, A2, B1, B2, C1, C2). The outer join will return all rows only once, with those that do not have matches in both tables having a null filled for the matching row's value.

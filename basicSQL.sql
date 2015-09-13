@@ -71,3 +71,35 @@ Union
 select pname
 from department, employee, project
 where dnum=dnumber and mgrssn=ssn and lname='Smith';
+
+-- Misc.
+SELECT ssn
+FROM employee
+WHERE dno in
+(SELECT dnumber
+ FROM department
+ WHERE dname='Research');
+
+SELECT ssn
+FROM employee
+WHERE dno in
+(SELECT dnumber
+ FROM dept_locations
+ WHERE dlocation='Houston');
+
+SELECT ssn
+FROM employees
+WHERE exists
+(SELECT *
+ FROM dept_locations
+ WHERE dlocation='Houston'
+ AND dno=dnumber)
+
+SELECT pnumber, dnum, lname, address, bdate
+FROM employee, department, project
+WHERE plocation='Stafford' AND
+dnum=dnumber AND mgrssn=ssn;
+
+SELECT E.lname, S.lname
+FROM employee E, employee S
+WHERE E.superssn=S.ssn;

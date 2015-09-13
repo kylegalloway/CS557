@@ -1,0 +1,26 @@
+1. List the ssn, fname, lname of employees who do not work in the Administration or Headquarters department (do not use a set operation).
+
+
+2. List all the ssn, lname, and hours of employees who work 10 or more hours per week on the 'ProductY' project.
+
+
+3. List the ssn, address for employees who do not work on the ’ProductY’ project..
+
+
+4. Retrieve the average salary and number of of employees who were are male.
+
+
+5. Same as 4. but list the results for each department by dname, dnumber
+
+
+6. For each employee, list the employee's firstname, last name and bdate of the employee’s dependents (renamed as Dep_Bday) .  If an employee does not have a dependent, the employee should still be listed.
+
+
+7. List the dnumber of departments that have locations in all the same locations as department 5.
+
+
+8. For each employee, list the employee's firstname, last name and dependent_name (renamed as SPOUSE) of the employee’s spouse.  If an employee does not have a spouse, the employee should still be listed.
+
+
+9. List the SSN and number of dependents for employees who have less than the average number of dependents. For example, if Employee1 has 2 dependents, Employee2 has zero dependents, Employee3 has 3 dependents end Employee4 has 1 dependents, the average number of dependents = 1.5.  So Employee2 and Employee4 should be included in the result.  NOTE:  the result of each query must be treated as a TABLE not a value.
+
